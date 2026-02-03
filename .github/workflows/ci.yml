@@ -114,6 +114,10 @@ jobs:
         run: |
           git clone --depth 1 -b develop https://github.com/cppalliance/corosio.git boost-source/libs/corosio
 
+      - name: Clone boostorg/filesystem
+        run: |
+          git clone --depth 1 -b develop https://github.com/boostorg/filesystem.git boost-source/libs/filesystem
+
       - name: Patch Boost
         id: patch
         run: |
